@@ -1,0 +1,3 @@
+# OlioOhjelmointiSyksy2023
+
+Viikon 1 esimerkit täällä...
