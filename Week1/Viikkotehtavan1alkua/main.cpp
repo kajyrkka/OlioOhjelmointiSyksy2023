@@ -15,7 +15,7 @@ int main()
     int numero;
     for(int i = 0;i<10;i++)
     {
-        numero = rand();
+        numero = rand()%20;
         cout<<numero<<endl;
     }
     return 0;
