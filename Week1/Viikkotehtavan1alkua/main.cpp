@@ -8,15 +8,22 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+
     cout << "RANDMAX = " << RAND_MAX <<endl;
     cout << "Time = "<< time(0) <<endl;
     srand(time(0)); // alustetaan satunnaislukugeneraattori
-    int numero;
-    for(int i = 0;i<10;i++)
+
+    int satunnainenLuku = rand()%20;
+    int kayttajanNumero = -1;
+
+    while(kayttajanNumero != satunnainenLuku)
     {
-        numero = rand()%20;
-        cout<<numero<<endl;
+       cout<<"Arvaa luku 0-19 valilta"<< endl;
+       cin>>kayttajanNumero;
+
+       cout<<"Annoit numeron = "<< kayttajanNumero<<endl;
     }
+
+
     return 0;
 }
