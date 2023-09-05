@@ -26,5 +26,9 @@ circle create_circle(string,int,int,int);
 int calculate_rectangle_area(rectangle);
 int calculate_circle_area(circle);
 
+// KYSYMYS, miten tekisit yhden funktion, jolla voitaisiin laskea niin
+// suorakaiteen kuin ympyränkin ala? Siis mitä parametreja tuolle
+// funktiolle tulee välittää?
+
 
 #endif // EXAMPLE_H
