@@ -6,7 +6,7 @@ using namespace std;
 class Osa
 {
 public:
-    Osa();
+    Osa(int);
     ~Osa();
     void printLuku();
 private:

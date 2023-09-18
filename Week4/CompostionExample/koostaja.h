@@ -9,9 +9,17 @@ class Koostaja
 public:
     Koostaja();
     ~Koostaja();
+
+    Osa osaPinosta;
+
+    static void staticFunctionExample();
+
     Osa * pOsa;
 private:
     //Osa osaPinosta;
+
+
+    void kaytetaanPointteriaFunctio();
 
 };
 

@@ -1,9 +1,9 @@
 #include "osa.h"
 
-Osa::Osa()
+Osa::Osa(int n)
 {
     cout<<"Osa luotu"<<endl;
-    luku = 1;
+    luku = n;
 }
 
 Osa::~Osa()
