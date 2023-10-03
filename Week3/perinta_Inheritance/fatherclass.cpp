@@ -1,8 +1,10 @@
 #include "fatherclass.h"
+
 //FatherClass::FatherClass():familyName("Spede")
 FatherClass::FatherClass()
 {
     cout<<"FatherClass created"<<endl;
+    cout<<"FamilyName = "<<familyName<<endl;
     familyName = "Turhapuro";
     setSkill("c++ programming skill");
 }

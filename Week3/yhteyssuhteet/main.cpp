@@ -33,6 +33,7 @@ int main()
     firstClass object1;
     secondClass object2;
     secondClass & ref2 = object2;
+
     object1.useSecondCopy(object2);
     object1.useSecondRef(ref2);
     object1.useSecondComposition();

@@ -1,10 +1,12 @@
 #ifndef SONCLASS_H
 #define SONCLASS_H
-#include "fatherclass.h"
+#include <iostream>
+using namespace std;
+//#include "fatherclass.h"
 
 //class SonClass:public FatherClass
 //class SonClass:protected FatherClass
-class SonClass:public FatherClass
+class SonClass //:public FatherClass
 {
 public:
     SonClass();

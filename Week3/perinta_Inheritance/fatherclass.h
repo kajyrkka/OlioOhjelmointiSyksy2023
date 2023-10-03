@@ -1,7 +1,12 @@
 #ifndef FATHERCLASS_H
 #define FATHERCLASS_H
 #include <iostream>
+
+#include "sonclass.h"
+
+
 using namespace std;
+
 
 class FatherClass
 {
@@ -9,7 +14,7 @@ public:
     FatherClass();
     ~FatherClass();
     void showFamilyInfo();
-    int huuhaa;
+    SonClass poika;
 
 
 protected:

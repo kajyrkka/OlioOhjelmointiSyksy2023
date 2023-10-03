@@ -8,8 +8,8 @@ class BaseClass
 {
 public:
     BaseClass();
-    //virtual ~BaseClass();
-    ~BaseClass();
+    virtual ~BaseClass();
+    //~BaseClass();
     virtual void receiver();
     virtual void transmitter();
     virtual void syncronization();

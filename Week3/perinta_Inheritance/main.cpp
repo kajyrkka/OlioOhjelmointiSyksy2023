@@ -1,4 +1,5 @@
-#include "sonclass.h"
+//#include "sonclass.h"
+#include "fatherclass.h"
 
 /*
  * Issues from this example:
@@ -18,6 +19,16 @@
  *    (= muuttujia) before
  *    construcor executes.
  *
+ *  Maanantain ongelma:
+ *  Jos FatherClassiin lisää
+ *  include SonClass, niin
+ *  SonClass.h incluudaa FatherClassin,
+ *  joka puolestaan incluudaa SonClassin
+ *  joka puolestaan incluudaa Fatherin,
+ *
+ *  jne... päättymätön ketju. Eli
+ *  Ei voi olla
+ *
  * */
 
 
@@ -25,11 +36,13 @@
 int main()
 {
 
-    SonClass object;
+   FatherClass object;
+   object.poika.showSonData();
+    //SonClass object;
 
 
-    //object.showFamilyInfo();
-    object.showSonData();
+    //object.showSonData();
+    object.showFamilyInfo();
 
 
     return 0;

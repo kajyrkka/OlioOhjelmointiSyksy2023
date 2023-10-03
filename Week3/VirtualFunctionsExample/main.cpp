@@ -33,7 +33,8 @@
 
 int main()
 {
-    /*DerivedClass object;
+    /*
+    DerivedClass object;
 
     object.frequencyCorrection();
     object.syncronization();

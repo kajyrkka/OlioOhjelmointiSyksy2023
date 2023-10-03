@@ -15,7 +15,7 @@ SonClass::~SonClass()
 void SonClass::showSonData()
 {
     cout<<"Son's education = "<< education<<endl;
-    cout<<"Son inherited from father "<< getSkill()<<endl;
+ //   cout<<"Son inherited from father "<< getSkill()<<endl;
 }
 
 void SonClass::setEducation(string s)
