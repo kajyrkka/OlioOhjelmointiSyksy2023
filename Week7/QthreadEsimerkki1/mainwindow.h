@@ -2,8 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "myclass.h"
-#include <QDebug>
+#include <QThread>
+#include "worker.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -18,14 +18,15 @@ public:
     ~MainWindow();
 
 public slots:
-    void handleCount();
-    void handleReset();
-    void handleSignal();
-    void handleStart();
+    void shutDownThreads();
+    void testHandler();
 
 private:
     Ui::MainWindow *ui;
-    int num;
-    myClass * pmyClass;
+    QThread myThread1;
+    QThread myThread2;
+
+    Worker Worker1;
+    Worker Worker2;
 };
 #endif // MAINWINDOW_H

@@ -22,6 +22,7 @@ class myClass : public QObject
 public:
     myClass(QObject *parent = nullptr);
     ~myClass();
+    void startTimer();
 
 signals:
     void sendTimerUpdate();

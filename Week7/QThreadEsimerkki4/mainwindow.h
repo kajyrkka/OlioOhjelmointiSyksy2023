@@ -2,8 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "myclass.h"
+#include <QThread>
 #include <QDebug>
+#include "worker.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -18,14 +19,19 @@ public:
     ~MainWindow();
 
 public slots:
-    void handleCount();
-    void handleReset();
-    void handleSignal();
-    void handleStart();
+    void updateUI();
+    void clickHandler();
+    void stopHandler();
+    void startHandler();
+
+signals:
+    void stopThread();
 
 private:
     Ui::MainWindow *ui;
-    int num;
-    myClass * pmyClass;
+    QThread * thread;
+    Worker * worker;
+
+    Worker olio;
 };
 #endif // MAINWINDOW_H
